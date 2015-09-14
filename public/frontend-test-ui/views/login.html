@@ -1,0 +1,26 @@
+<div class="row">
+	<div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-12" ng-controller="loginController">
+		<span class="login-header appName">FrontEnd Test</span>
+		<form class="loginDiv" name="loginForm" ng-submit="login()"novalidate>
+			<span class="signin-label pull-left"><b>Please Sign In</b></span></br>
+			<span class="error" ng-show="loginForm.$valid && loginForm.$pristine">{{serverError}}</span>
+			<div>			
+				<input name="loginName" type="text" class="form-control input-sm" ng-model="userName"
+				placeholder="Enter User Name" required />
+				<span ng-show="loginForm.$submitted">
+					<span class="error" ng-show="loginForm.loginName.$error.required">Please Enter UserName</span>
+				</span>
+			</div><br/>
+			<div>
+				<input name="userPwd" type="password" class="form-control input-sm" ng-model="userPassword" placeholder="Enter Password" required />
+				<span ng-show="loginForm.$submitted">
+					<span class="error" ng-show="loginForm.userPwd.$error.required">Please Enter Password</span>
+				</span>
+			</div><br/>
+			<div>
+				<button type="submit" class="btn btn-primary">Login</button>
+			</div>
+
+		</form>
+	</div>
+</div>

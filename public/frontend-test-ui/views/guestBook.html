@@ -1,0 +1,40 @@
+<div class="appContainer" ng-controller="guestController">
+
+	<div class="tplHeader tpl-header-text">
+        <span><b>Guest Book</b></span>
+        <a href="#/states" class="pull-right link" ><b>Browse States</b></a>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <span class="error" ng-show="loginForm.$valid && loginForm.$pristine">{{serverError}}</span>
+            	<form name="msgForm" ng-submit="writeMessage()" noValidate>
+            		<div>
+            			<input type="text" name="phoneNo" class="form-control input-sm" ng-model="phoneNo" ng-pattern="/^[0-9]{10,15}$/" placeholder="Enter Your Phone No." required />
+                        <span ng-show="msgForm.$submitted">
+                            <span class="error" ng-show="msgForm.phoneNo.$error.required">Please Enter UserName</span>
+                            <span class="error" ng-show="msgForm.phoneNo.$error.pattern">Enter Valid Phone No!</span>
+                        </span>
+            		</div><br/>
+            		<div>
+            			<textArea name="message" rows="3" class="form-control input-sm" ng-model="message" placeholder="Enter Your Message.." required/>
+                        <span ng-show="msgForm.$submitted">
+                            <span class="error" ng-show="msgForm.message.$error.required">Please Enter UserName</span>
+                        </span>
+            		</div><br/>
+            		<div>
+            			<label> </label>
+            			<button type="submit" class="btn btn-primary">Submit</button>
+            		</div>
+            	</form>
+            </div>
+        </div>
+        	<div >
+    			<div ng-repeat="message in messages.slice().reverse()" class="list-group-item">
+    				<h4 class="list-group-item-heading">{{message.user}} ({{message.phone}})</h4>
+    				<p class="list-group-item-text">{{message.message}}</p>
+    			</div>
+    		</div>
+    </div>
+
+</div>

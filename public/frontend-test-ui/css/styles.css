@@ -1,0 +1,112 @@
+body {
+	
+	margin: auto;
+	background-color: #99B2CC;
+	padding: 0px !important;
+}
+
+.loginDiv {	
+	background-color: #ffffff;
+	text-align: center;
+	border-radius: 0px 0px 10px 10px;
+
+}
+
+formgroup {
+	display: block;
+}
+
+formgroup label {	
+	width: 100px;
+	display: inline-block;
+}
+
+.header{
+    background-color: #5C85AD;
+	height: 40px;
+	padding: 5px 10px;
+}
+
+.statesGrid {
+    width: 500px;
+    height: 250px;
+}
+
+.appContainer {
+	position: relative;
+	background-color: #ffffff;
+	padding: 10px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.loginDiv input, .loginDiv button{
+	width: 90%;
+}
+
+form {
+	padding: 20px;
+}
+form input{
+	display: inline-block !important;
+}
+
+.error {
+    color: #E21;
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    padding-right: 20px;
+}
+
+form.ng-submitted .ng-invalid-required, form.ng-submitted input.ng-invalid {
+    border-color: #E21 !important;
+}
+
+.signin-label {
+	margin: 0px 20px 30px;
+	display: inline-block;
+}
+
+.login-header {
+	background-color: #5C85AD;
+	height: 40px;
+	padding: 5px;
+	border-radius: 10px 10px 0px 0px;
+	display: block;
+	margin-top: 20%;
+	text-align: center;
+}
+
+.tplHeader {
+	top: 35px;
+	display: block;
+	padding: 20px 5px 10px;
+}
+
+.tpl-header-text {
+	font-size: 18px;
+}
+
+.datagrid {
+	margin: 5px;
+}
+
+.logout {
+	color: #ffffff;
+	font-size: 12px;
+}
+
+.link {
+	color: #5C85AD;
+	text-decoration: underline;
+}
+
+.appName{
+	color: #99B2CC;
+	font-size: 20px;
+}
+
+/* '썘' */
+.ui-grid-icon-up-dir:before {
+  content: '\c359';
+}

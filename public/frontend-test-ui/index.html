@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<title>FrontEnd Test</title>
+	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/angular-ui-grid.min.css"/>
+	<link href="http://ui-grid.info/release/ui-grid-unstable.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css"/>
+
+</head>
+<body class="container-fluid" ng-app="frontEndTestApp">
+
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+			<header></header>
+
+			<div ng-view=""></div>
+		</div>
+	</div>
+
+	<script src="scripts/libs/jquery-2.1.4.min.js"></script>
+	<script src="scripts/libs/angular.min.js"></script>
+	<script src="scripts/libs/angular-ui-grid.min.js"></script>
+	<script src="scripts/libs/angular-route.min.js"></script>
+	<script src="scripts/frontEndTest.module.js"></script>
+	<script src="scripts/frontEndTest.route.js"></script>
+	<script src="scripts/frontEndTest.directives.js"></script>
+	<script src="services/apiService.js"></script>
+	<script src="controllers/headerController.js"></script>
+	<script src="controllers/loginController.js"></script>
+	<script src="controllers/statesController.js"></script>
+	<script src="controllers/guestController.js"></script>
+
+</body>
+</html>
